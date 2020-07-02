@@ -1,0 +1,11 @@
+package spring.di.entity;
+
+public class NewlecExam implements Exam {
+
+	@Override
+	public int avg() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
