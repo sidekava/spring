@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- 대부분 언어는 module을 가지고 있다. 그리고 그 module은 이름이 같아 충돌이 날 수 있다. 
+	그래서 그 이름에 성을 붙였고 그게 namespace이다. 근데 성까지 같아서 구별하기위해 namespace다. -->
+	<!-- namespace는 의미가 두 가지 있다.
+	<홍길동:bean></홍길동:bean> -> 이 태그가 특정한 처리기에 실행 될 수 있도록 설정
+	<김길동:bean></김길동:bean> -> 태그의 이름을 식별하기 위해서
+	 -->
+	<!-- Exam exam = new NewlecExam(); -->
+	<!-- NewlecExam(int kor, int eng, int math, int com) 
+	<bean id="exam" class="spring.di.entity.NewlecExam">
+		<constructor-arg index="0" type="int" value="10" />
+		<constructor-arg name="eng" type="int" value="20" />
+		<constructor-arg index="3" value="30" />
+		<constructor-arg name="math" value="40" />
+	</bean>
+	 -->
+	 <bean id="exam" class="spring.di.entity.NewlecExam" p:kor="10" p:eng="20" p:math="30">
+	 </bean>
+	
+	<!-- ExamConsole console = new InlineExamConsole(); -->
+	<bean id="console" class="spring.di.ui.InlineExamConsole">
+		<!-- console.setExam(exam); -->
+		<property name="exam" ref="exam"/>
+	</bean>
+	
+	<!-- 
+	이 지시서대로 객체를 두 개 만들고 injection까지 해서 IOC 컨테이너에 담겨져 있을 것이다.
+	사용하려면 이름(id)로 쓸 수 있고 타입명(class)으로 꺼내서 사용할 수 있다.
+	 -->
+	
+</beans>

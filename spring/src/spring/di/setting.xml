@@ -3,13 +3,24 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	<!-- Exam exam = new NewlecExam(); -->
-	<bean id="exam" class="spring.di.entity.NewlecExam" />
+	<bean id="exam" class="spring.di.entity.NewlecExam">
+		<property name="kor">
+			<value>10</value>
+		</property>
+		<property name="eng" value="10" />
+		<property name="math" value="10" />
+		<property name="com" value="10" />
+	</bean>
 	
-	<!-- ExamConsole console = new GridExamConsole(); -->
-	<bean id="console" class="spring.di.ui.GridExamConsole">
+	<!-- ExamConsole console = new InlineExamConsole(); -->
+	<bean id="console" class="spring.di.ui.InlineExamConsole">
 		<!-- console.setExam(exam); -->
 		<property name="exam" ref="exam"/>
 	</bean>
 	
+	<!-- 
+	이 지시서대로 객체를 두 개 만들고 injection까지 해서 IOC 컨테이너에 담겨져 있을 것이다.
+	사용하려면 이름(id)로 쓸 수 있고 타입명(class)으로 꺼내서 사용할 수 있다.
+	 -->
 	
 </beans>
