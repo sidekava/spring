@@ -11,8 +11,8 @@
     <context:annotation-config />  
 	<!-- Exam exam = new NewlecExam(); -->
 	<!-- NewlecExam(int kor, int eng, int math, int com) -->
-	 <bean id="exam1" class="spring.di.entity.NewlecExam" p:kor="10" p:eng="10" />
-	 <bean id="exam2" class="spring.di.entity.NewlecExam" p:kor="20" p:eng="20" />
+<!-- 	 <bean id="exam1" class="spring.di.entity.NewlecExam" p:kor="10" p:eng="10" />
+	 <bean id="exam2" class="spring.di.entity.NewlecExam" p:kor="20" p:eng="20" /> -->
 	 	<!-- autowired가 선언된 setter가 bean을 찾는 방법.
 	 		1. bean의 클래스가 setter의 입력자료형으로 찾는다.
 	 		2. 입력자료형만으로는 bean을 확정하지 못할땐 변수명으로 찾는다.
