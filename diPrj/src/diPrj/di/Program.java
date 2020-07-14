@@ -3,6 +3,7 @@ package diPrj.di;
 import diPrj.di.entity.Exam;
 import diPrj.di.entity.NewlecExam;
 import diPrj.di.ui.ExamConsole;
+import diPrj.di.ui.GridExamConsole;
 import diPrj.di.ui.InlineExamConsole;
 
 public class Program {
@@ -19,7 +20,8 @@ public class Program {
 		/* exam을 출력해주는 ExamConsole 클래스 추가
 		 * 데이터를 가지고 출력하기 때문에 데이터를 껴 넣어 준다.(exam)
 		 */
-		ExamConsole console = new InlineExamConsole(exam);
+		//ExamConsole console = new InlineExamConsole(exam);
+		ExamConsole console = new GridExamConsole(exam);
 		console.print();
 	}
 }
