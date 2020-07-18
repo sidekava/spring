@@ -3,6 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<!-- marketplace에서 spring tools3를 설치. 그리고 프로젝트 우클릭 -> new -> spring bean definition file 선택 -->
+	<!-- xml의 내용이 IOC 컨테이너에 담겨있다. -->
 	
 	<!-- Exam exam = new NewlecExam(); -->
 	<bean id="exam" class="diPrj.di.entity.NewlecExam"></bean>
@@ -10,6 +11,6 @@
 	<!-- ExamConsole console = new GridExamConsole(); -->
 	<bean id="console" class="diPrj.di.ui.GridExamConsole">
 		<!-- console.setExam(exam); -->
-		<property name="exam" value="exam"></property>
+		<property name="exam" ref="exam"></property>
 	</bean>
 </beans>

@@ -1,5 +1,8 @@
 package diPrj.di;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import diPrj.di.entity.Exam;
 import diPrj.di.entity.NewlecExam;
 import diPrj.di.ui.ExamConsole;
@@ -20,11 +23,14 @@ public class Program {
 		*/
 		
 		//ApplicationContext를 사용하기 위해선 spring library가 필요
+		//Maven통해 변경 -> project 우클릭 -> Configure -> Convert to Maven Project
+		//
 		ApplicationContext context = 
 				new ClassPathXmlApplicationContext("diPrj/di/setting.xml");
 		
-		ExamConsole console = new InlineExamConsole();
 //		ExamConsole console = new GridExamConsole(); // GridExamConsole이 exam을 조립하고 있다. exam이 dependency가 된 것.
+//		ExamConsole console = (ExamConsole) context.getBean("console");
+		ExamConsole console = context.getBean(ExamConsole.class);
 		console.print();
 	}
 }
