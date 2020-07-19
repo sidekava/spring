@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- marketplace에서 spring tools3를 설치. 그리고 프로젝트 우클릭 -> new -> spring bean definition file 선택 -->
+	<!-- xml의 내용이 IOC 컨테이너에 담겨있다. -->
+	
+	<!-- Exam exam = new NewlecExam(); -->
+	<bean id="exam" class="diPrj.di.entity.NewlecExam">
+		<!-- property에 name에 객체명, value에 값을 넣고 해당 bean의 class에 setter method를 만들어두면 각 객체에 맞는 value가 자동으로 setting된다. -->
+		<property name="kor">
+			<value>10</value>
+		</property>
+		<property name="eng" value="10" />
+		<property name="math" value="10" />
+		<property name="com" value="10" />
+	</bean>
+	
+	<!-- ExamConsole console = new GridExamConsole(); -->
+	<bean id="console" class="diPrj.di.ui.GridExamConsole">
+		<!-- console.setExam(exam); -->
+		<property name="exam" ref="exam"></property>
+	</bean>
+</beans>

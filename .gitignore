@@ -12,3 +12,10 @@ diPrj3_applicationcontext2/.classpath
 diPrj3_applicationcontext2/.project
 diPrj3_applicationcontext2/.settings/org.eclipse.jdt.core.prefs
 diPrj3_applicationcontext2/.settings/org.eclipse.m2e.core.prefs
+diPrj4_DI/.project
+diPrj4_DI/target/classes/META-INF/MANIFEST.MF
+diPrj4_DI/target/classes/META-INF/maven/com.sidekava/diPrj/pom.properties
+diPrj4_DI/target/classes/META-INF/maven/com.sidekava/diPrj/pom.xml
+diPrj4_DI/.classpath
+diPrj4_DI/.settings/org.eclipse.jdt.core.prefs
+diPrj4_DI/.settings/org.eclipse.m2e.core.prefs
