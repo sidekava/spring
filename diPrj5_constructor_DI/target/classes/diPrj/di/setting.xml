@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- marketplace에서 spring tools3를 설치. 그리고 프로젝트 우클릭 -> new -> spring bean definition file 선택 -->
+	<!-- xml의 내용이 IOC 컨테이너에 담겨있다. -->
+	
+	<!-- Exam exam = new NewlecExam(); -->
+	<bean id="exam" class="diPrj.di.entity.NewlecExam">
+		<!-- constructor를 넣으면 class의 생성자의 입력값의 순서에 따라 값이 들어감
+		<constructor-arg value="10" />
+		<constructor-arg value="10" />
+		<constructor-arg value="10" />
+		<constructor-arg value="10" />
+		-->
+		<!-- index를 이용하여 생성자의 입력값에 들어갈 value의 순서를 정할 수 있다. 
+		<constructor-arg index="0" value="10" />
+		<constructor-arg index="1" value="20" />
+		<constructor-arg index="3" value="30" />
+		<constructor-arg index="2" value="40" />
+		-->
+		<!-- type까지 있어야 생성자를 구분할 수 있다면 type도 입력 가능 
+		<constructor-arg name="kor" type=float value="10" />
+		<constructor-arg name="eng" type=float value="20" />
+		<constructor-arg name="com" type=float value="30" />
+		<constructor-arg name="math" type=float value="40" />
+		 -->
+		
+	</bean>
+	
+	<!-- ExamConsole console = new GridExamConsole(); -->
+	<bean id="console" class="diPrj.di.ui.GridExamConsole">
+		<!-- console.setExam(exam); -->
+		<property name="exam" ref="exam"></property>
+	</bean>
+</beans>
