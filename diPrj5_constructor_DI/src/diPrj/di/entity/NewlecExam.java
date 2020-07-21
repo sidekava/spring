@@ -4,6 +4,10 @@ import diPrj.di.entity.Exam;
 
 public class NewlecExam implements Exam {
 	
+	public NewlecExam() {
+		
+	}
+	
 	public NewlecExam(int kor, int eng, int math, int com) {
 		super();
 		this.kor = kor;
