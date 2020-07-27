@@ -31,3 +31,13 @@ diPrj7_annotation/.classpath
 diPrj7_annotation/.project
 diPrj7_annotation/.settings/org.eclipse.jdt.core.prefs
 diPrj7_annotation/.settings/org.eclipse.m2e.core.prefs
+diPrj8_annotation2/target/classes/diPrj/di/Program.class
+diPrj8_annotation2/target/classes/diPrj/di/setting.xml
+diPrj8_annotation2/target/classes/diPrj/di/entity/Exam.class
+diPrj8_annotation2/target/classes/diPrj/di/entity/NewlecExam.class
+diPrj8_annotation2/target/classes/diPrj/di/ui/ExamConsole.class
+diPrj8_annotation2/target/classes/diPrj/di/ui/GridExamConsole.class
+diPrj8_annotation2/target/classes/diPrj/di/ui/InlineExamConsole.class
+diPrj8_annotation2/target/classes/META-INF/MANIFEST.MF
+diPrj8_annotation2/target/classes/META-INF/maven/com.sidekava/diPrj/pom.properties
+diPrj8_annotation2/target/classes/META-INF/maven/com.sidekava/diPrj/pom.xml
