@@ -22,8 +22,8 @@ public class Program {
 //		Exam exam = context.getBean(Exam.class);
 //		System.out.println(exam.toString());
 //		ExamConsole console = new GridExamConsole(); // GridExamConsole이 exam을 조립하고 있다. exam이 dependency가 된 것.
-//		ExamConsole console = (ExamConsole) context.getBean("console");
-		ExamConsole console = context.getBean(ExamConsole.class);
+		ExamConsole console = (ExamConsole) context.getBean("console");
+//		ExamConsole console = context.getBean(ExamConsole.class);
 		console.print();
 		
 //		List <Exam> exams = (List<Exam>) context.getBean("exams");//new ArrayList<>();

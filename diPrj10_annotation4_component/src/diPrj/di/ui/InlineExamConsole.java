@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import diPrj.di.entity.Exam;
 
-@Component
+@Component("console")
 public class InlineExamConsole implements ExamConsole {
 	
 	@Autowired(required = false)
