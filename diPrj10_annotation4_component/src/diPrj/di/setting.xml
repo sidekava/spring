@@ -9,7 +9,7 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
 	
 	
-	<context:component-scan base-package="diPrj.di.ui" />
+	<context:component-scan base-package="diPrj.di.ui, diPrj.di.entity" />
 	<!-- Exam exam = new NewlecExam -->
 	<!-- 
 	<bean id="exam1" class="diPrj.di.entity.NewlecExam" p:kor="10" p:eng="10" />

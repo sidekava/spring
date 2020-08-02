@@ -1,7 +1,11 @@
 package diPrj.di.entity;
 
+import org.springframework.stereotype.Component;
+
 import diPrj.di.entity.Exam;
 
+
+@Component
 public class NewlecExam implements Exam {
 	
 	public NewlecExam() {

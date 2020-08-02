@@ -9,8 +9,8 @@ import diPrj.di.entity.Exam;
 @Component("console")
 public class InlineExamConsole implements ExamConsole {
 	
-	@Autowired(required = false)
-	@Qualifier("exam2")
+	@Autowired
+//	@Qualifier("exam2")
 	private Exam exam; 
 	
 
