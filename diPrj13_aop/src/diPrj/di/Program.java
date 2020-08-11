@@ -22,8 +22,11 @@ public class Program {
 		 * 로그처리, 권한, 보안처리, 트랜잭션 처리 등의 코드가 필요할 것이다.
 		 * 그러한 보조 로직은 앞이나 뒤, 혹은 위, 아래에 위치한다. 즉 주 로직의 처음과 끝부분에 있다.
 		 * 보조로직이 프락시를 사용하게 만든다. 이것이 cross-cutting Concern
-		 * 
-		 * 
+		 */
+		
+		/*
+		 * 구현방식
+		 * 프락시 클래스에 Cross-cutting Concern을 구현한다. 
 		 */
 		
 		ApplicationContext context = 
