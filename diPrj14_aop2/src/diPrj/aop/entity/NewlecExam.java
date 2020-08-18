@@ -57,7 +57,7 @@ public class NewlecExam implements Exam {
 
 	@Override
 	public int total() {
-		long start = System.currentTimeMillis();
+//		long start = System.currentTimeMillis();
 		int result = kor+eng+math+com;
 		try {
 			Thread.sleep(200);
@@ -65,10 +65,10 @@ public class NewlecExam implements Exam {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		long end = System.currentTimeMillis();
+//		long end = System.currentTimeMillis();
 		
-		String message = (end - start) + "ms 시간이 소요됬어요";
-		System.out.println(message);
+//		String message = (end - start) + "ms 시간이 소요됬어요";
+//		System.out.println(message);
 		return result;
 	}
 
