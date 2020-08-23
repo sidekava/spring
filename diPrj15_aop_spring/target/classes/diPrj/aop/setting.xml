@@ -9,7 +9,7 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
 	
 	<bean id="target" class="diPrj.di.entity.NewlecExam" p:kor="1" p:eng="1" p:math="1" p:com="1"/>
-	<bean id="logAroundAdvice" class="diPrj.aop.LogAroundAdvice" />
+	<bean id="logAroundAdvice" class="diPrj.aop.advice.LogAroundAdvice" />
 	<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
 		<property name="target" ref="target"/>
 		<property name="interceptorNames">
