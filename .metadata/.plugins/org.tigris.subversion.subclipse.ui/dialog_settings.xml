@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="35" key="passwordStores.location.y"/>
-	<item value="559" key="passwordStores.size.y"/>
-	<item value="269" key="passwordStores.location.x"/>
-	<item value="934" key="passwordStores.size.x"/>
+	<item key="passwordStores.location.y" value="35"/>
+	<item key="passwordStores.size.y" value="559"/>
+	<item key="passwordStores.location.x" value="269"/>
+	<item key="passwordStores.size.x" value="934"/>
 </section>
